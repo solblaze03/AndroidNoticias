@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="15dp"
+        android:id="@+id/cardView"
+
+        app:strokeWidth="3dp"
+        app:strokeColor="#1f1f1f"
+        android:background="@drawable/bordercard"
+        android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|start"
+
+        android:background="@drawable/bordercard">
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+
+            android:paddingEnd="20dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imagenNoticia"
+                android:layout_width="115dp"
+                android:background="@drawable/round"
+                android:contentDescription="@string/imagen_noticia"
+
+                android:layout_marginStart="15dp"
+                android:layout_height="85dp">
+            </ImageView>
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/imagenNoticia"
+                android:layout_marginStart="15dp"
+                android:text="Fecha"
+                android:id="@+id/fechaNoticia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#1f1f1f"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingEnd="20dp"
+            android:paddingBottom="20dp"
+            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tituloNoticia"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toEndOf="@id/imagenNoticia"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="19dp"
+            android:text="Titulo de noticiaaaaaaaaaaaaaaaaaaaaaaaa"
+            android:textSize="14sp"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/tituloNoticia"
+            app:layout_constraintStart_toEndOf="@id/imagenNoticia"
+            android:layout_marginStart="15dp"
+            android:text="descripcion de toda la notiassdfsdfdsfdsfasdsadadasdasdasdasdasdasdadasdasdadsadasdadasdadadadsasdsadadsdasdasdasdasdciaadadadaasdasdadadsadsadsadadadakndandklandnaksldnadkadnlnadskandklankdnakdnakdkanklandklandklasndklandkslandksandklsandkandaslndklsandklasdnkldnkaldnklasdnaksdklsadmlasdmkasldksaldnkasdnaskldnasklnadsklndklnskldnaskdnaskldnadsklnsdklandkladsndadadadadadadadad"
+            android:id="@+id/descripcion"
+
+            android:textSize="11sp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="135dp">
+        </TextView>
+        </LinearLayout>
+    </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

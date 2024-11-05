@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">noticiaas</string>
+    <string name="iniciar_sesion">Iniciar sesion</string>
+    <string name="hintpass">Introduce la contraseña</string>
+    <string name="hintuser">Introduce el usuario</string>
+    <string name="imagen_noticia">Imagen noticia</string>
+</resources>
